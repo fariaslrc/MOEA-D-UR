@@ -84,7 +84,7 @@ function MOEADUR(Global)
 				% adaptive weight adjustment				
 				[Population,W,B,I_old] = updateWeight(Global,Population,W,Z,T,EP,round(rate_update_weight*Global.N));              
                 % division of objective space    
-				Population,Z,EP]=space_divide(Global,EP,Population,Z,W_URP,W,divisoes_k_means,mini_generation,nEP);   		
+				[Population,Z,EP]=space_divide(Global,EP,Population,Z,W_URP,W,divisoes_k_means,mini_generation,nEP);   		
             end
         end
     end
